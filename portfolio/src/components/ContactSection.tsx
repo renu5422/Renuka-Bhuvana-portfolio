@@ -16,17 +16,20 @@ export default function ContactSection() {
           Let’s Connect
         </h2>
 
-        <p className="text-gray-600 mb-8">
-          I'm actively looking for QA Automation and AI-related opportunities.
-          Feel free to reach out.
+        <p className="text-gray-600 mb-4">
+          I'm actively looking for QA Automation, Java Full Stack, and AI-related opportunities.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <p className="text-sm text-gray-500 mb-6 italic">
+          Available for freelance projects in automation testing and web development.
+        </p>
+
+        <div className="flex justify-center gap-6">
 
           <motion.a
             href="mailto:renukabhuvanac05@gmail.com"
             whileHover={{ scale: 1.05 }}
-            className="px-5 py-2 border rounded-lg hover:bg-black hover:text-white transition"
+            className="underline"
           >
             Email
           </motion.a>
@@ -34,9 +37,8 @@ export default function ContactSection() {
           <motion.a
             href="https://github.com/renu5422"
             target="_blank"
-            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
-            className="px-5 py-2 border rounded-lg hover:bg-black hover:text-white transition"
+            className="underline"
           >
             GitHub
           </motion.a>
@@ -44,9 +46,8 @@ export default function ContactSection() {
           <motion.a
             href="https://linkedin.com/in/renuka-bhuvana"
             target="_blank"
-            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
-            className="px-5 py-2 border rounded-lg hover:bg-black hover:text-white transition"
+            className="underline"
           >
             LinkedIn
           </motion.a>

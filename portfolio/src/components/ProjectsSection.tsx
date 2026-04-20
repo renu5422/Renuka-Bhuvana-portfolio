@@ -20,25 +20,29 @@ export default function ProjectsSection() {
 
           {/* QA AUTOMATION */}
           <motion.div
-            className="p-6 border rounded-xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left"
+            className="p-6 border rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition text-left"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
             whileHover={{ scale: 1.03 }}
           >
-            <h3 className="text-2xl font-semibold mb-2">
+            <h3 className="text-xl font-semibold mb-2">
               QA Automation Framework
             </h3>
 
-            <p className="text-gray-600 mb-4">
-              Built a scalable Playwright automation framework for reliable testing workflows.
+            <p className="text-gray-600 mb-3">
+              Built a Playwright automation framework using Python and Pytest for scalable test execution.
             </p>
 
-            <ul className="text-sm text-gray-500 mb-4 list-disc pl-5 space-y-1">
+            <ul className="text-sm text-gray-500 mb-3 list-disc pl-5 space-y-1">
               <li>Implemented Page Object Model (POM)</li>
-              <li>Developed automation scripts using Python and Pytest</li>
-              <li>Designed reusable utilities and fixtures</li>
+              <li>Reusable utilities and fixtures</li>
+              <li>Automated UI test flows</li>
             </ul>
+
+            <p className="text-xs text-gray-500 mb-3 italic">
+              Built to simulate real-world testing workflows used in production environments.
+            </p>
 
             <p className="text-sm text-gray-500 mb-4">
               Tech: Python, Playwright, Pytest
@@ -47,8 +51,7 @@ export default function ProjectsSection() {
             <a
               href="https://github.com/renu5422/qa-automation-journey"
               target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 border rounded-lg text-sm hover:bg-black hover:text-white transition"
+              className="text-sm underline"
             >
               GitHub
             </a>
@@ -56,25 +59,29 @@ export default function ProjectsSection() {
 
           {/* COURSEHUB */}
           <motion.div
-            className="p-6 border rounded-xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left"
+            className="p-6 border rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition text-left"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
             whileHover={{ scale: 1.03 }}
           >
-            <h3 className="text-2xl font-semibold mb-2">
+            <h3 className="text-xl font-semibold mb-2">
               CourseHub (E-Learning Platform)
             </h3>
 
-            <p className="text-gray-600 mb-4">
-              Developed a full stack platform for managing courses and user interactions.
+            <p className="text-gray-600 mb-3">
+              Developed a full stack system for managing courses and user interactions.
             </p>
 
-            <ul className="text-sm text-gray-500 mb-4 list-disc pl-5 space-y-1">
-              <li>Designed backend logic using Java</li>
-              <li>Managed user and course data</li>
-              <li>Focused on scalable structure</li>
+            <ul className="text-sm text-gray-500 mb-3 list-disc pl-5 space-y-1">
+              <li>Backend logic using Java</li>
+              <li>Data handling and structure</li>
+              <li>Scalable architecture design</li>
             </ul>
+
+            <p className="text-xs text-gray-500 mb-3 italic">
+              Designed with real-world system architecture concepts.
+            </p>
 
             <p className="text-sm text-gray-500 mb-4">
               Tech: Java, Web, Database
@@ -83,8 +90,7 @@ export default function ProjectsSection() {
             <a
               href="https://github.com/renu5422/CourseHub"
               target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 border rounded-lg text-sm hover:bg-black hover:text-white transition"
+              className="text-sm underline"
             >
               GitHub
             </a>
@@ -92,36 +98,38 @@ export default function ProjectsSection() {
 
           {/* BIBLIOMANAGER */}
           <motion.div
-            className="p-6 border rounded-xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left"
+            className="p-6 border rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition text-left"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.2 }}
             whileHover={{ scale: 1.03 }}
           >
-            <h3 className="text-2xl font-semibold mb-2">
-              BiblioManager (Library Management Web App)
+            <h3 className="text-xl font-semibold mb-2">
+              BiblioManager (Flask App)
             </h3>
 
-            <p className="text-gray-600 mb-4">
-              Developed a modular Flask-based web application for managing library workflows.
+            <p className="text-gray-600 mb-3">
+              Built a modular Flask application to manage books, users, and borrowing workflows.
             </p>
 
-            <ul className="text-sm text-gray-500 mb-4 list-disc pl-5 space-y-1">
-              <li>Built backend using Flask</li>
-              <li>Implemented CRUD operations</li>
-              <li>Handled borrowing/return workflows</li>
-              <li>Used Jinja2 templates for UI</li>
+            <ul className="text-sm text-gray-500 mb-3 list-disc pl-5 space-y-1">
+              <li>Flask backend with modular structure</li>
+              <li>CRUD operations for library system</li>
+              <li>Jinja2 templates for UI</li>
             </ul>
 
+            <p className="text-xs text-gray-500 mb-3 italic">
+              Demonstrates backend design using Python web frameworks.
+            </p>
+
             <p className="text-sm text-gray-500 mb-4">
-              Tech: Python, Flask, HTML, CSS, Jinja2
+              Tech: Python, Flask, HTML, CSS
             </p>
 
             <a
               href="https://github.com/renu5422/BiblioManager"
               target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 border rounded-lg text-sm hover:bg-black hover:text-white transition"
+              className="text-sm underline"
             >
               GitHub
             </a>
