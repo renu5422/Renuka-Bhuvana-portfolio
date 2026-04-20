@@ -8,9 +8,12 @@ export default function AboutSection() {
         </h2>
 
         <p className="text-gray-600 leading-relaxed">
-          I am a developer focused on QA Automation and Software Testing.
-          Currently building a production-level Playwright framework while integrating AI-assisted testing into my workflow.
-          My goal is to evolve into an AI Engineer by combining strong programming fundamentals with modern AI tools.
+          I am a Java Full Stack Developer currently expanding into QA Automation and AI Engineering.
+          I build scalable applications and automation frameworks using Playwright with Python.
+          
+          I am actively learning Python for automation, testing, and AI-based systems, aiming to build intelligent and reliable software solutions.
+          
+          I am also open to freelance opportunities in automation testing, web development, and API validation.
         </p>
 
       </div>

@@ -1,118 +1,131 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function ProjectsSection() {
   return (
     <section id="projects" className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto text-center">
 
-        <h2 className="text-3xl font-semibold mb-12">
+        <motion.h2
+          className="text-3xl font-semibold mb-12"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           Projects
-        </h2>
+        </motion.h2>
 
         <div className="grid md:grid-cols-3 gap-8">
 
           {/* QA AUTOMATION */}
-          <div className="p-6 border rounded-xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left">
-
+          <motion.div
+            className="p-6 border rounded-xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            whileHover={{ scale: 1.03 }}
+          >
             <h3 className="text-2xl font-semibold mb-2">
               QA Automation Framework
             </h3>
 
             <p className="text-gray-600 mb-4">
-              Built a scalable Playwright automation framework focused on reliability, maintainability, and real-world testing workflows.
+              Built a scalable Playwright automation framework for reliable testing workflows.
             </p>
 
             <ul className="text-sm text-gray-500 mb-4 list-disc pl-5 space-y-1">
-              <li>Implemented Page Object Model (POM) architecture</li>
+              <li>Implemented Page Object Model (POM)</li>
+              <li>Developed automation scripts using Python and Pytest</li>
               <li>Designed reusable utilities and fixtures</li>
-              <li>Handled edge cases and improved test stability</li>
-              <li>Integrated structured test execution workflow</li>
             </ul>
 
             <p className="text-sm text-gray-500 mb-4">
               Tech: Python, Playwright, Pytest
             </p>
 
-            <div className="flex gap-4">
-              <a
-                href="https://github.com/renu5422/qa-automation-journey"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 border rounded-lg text-sm hover:bg-black hover:text-white transition"
-              >
-                GitHub
-              </a>
-            </div>
-
-          </div>
+            <a
+              href="https://github.com/renu5422/qa-automation-journey"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 border rounded-lg text-sm hover:bg-black hover:text-white transition"
+            >
+              GitHub
+            </a>
+          </motion.div>
 
           {/* COURSEHUB */}
-          <div className="p-6 border rounded-xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left">
-
+          <motion.div
+            className="p-6 border rounded-xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            whileHover={{ scale: 1.03 }}
+          >
             <h3 className="text-2xl font-semibold mb-2">
               CourseHub (E-Learning Platform)
             </h3>
 
             <p className="text-gray-600 mb-4">
-              Developed a course management platform enabling structured learning and user interaction.
+              Developed a full stack platform for managing courses and user interactions.
             </p>
 
             <ul className="text-sm text-gray-500 mb-4 list-disc pl-5 space-y-1">
-              <li>Designed modular structure for course management</li>
-              <li>Handled user interaction and data flow</li>
-              <li>Focused on scalability and maintainability</li>
-              <li>Implemented backend-driven logic</li>
+              <li>Designed backend logic using Java</li>
+              <li>Managed user and course data</li>
+              <li>Focused on scalable structure</li>
             </ul>
 
             <p className="text-sm text-gray-500 mb-4">
-              Tech: Java, Web Technologies, Database (update if needed)
+              Tech: Java, Web, Database
             </p>
 
-            <div className="flex gap-4">
-              <a
-                href="https://github.com/renu5422/CourseHub"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 border rounded-lg text-sm hover:bg-black hover:text-white transition"
-              >
-                GitHub
-              </a>
-            </div>
+            <a
+              href="https://github.com/renu5422/CourseHub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 border rounded-lg text-sm hover:bg-black hover:text-white transition"
+            >
+              GitHub
+            </a>
+          </motion.div>
 
-          </div>
-
-          {/* BIBLIO MANAGER */}
-          <div className="p-6 border rounded-xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left">
-
+          {/* BIBLIOMANAGER */}
+          <motion.div
+            className="p-6 border rounded-xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            whileHover={{ scale: 1.03 }}
+          >
             <h3 className="text-2xl font-semibold mb-2">
-              BiblioManager (Library System)
+              BiblioManager (Library Management Web App)
             </h3>
 
             <p className="text-gray-600 mb-4">
-              Built a system to manage books, users, and borrowing workflows with efficient data handling.
+              Developed a modular Flask-based web application for managing library workflows.
             </p>
 
             <ul className="text-sm text-gray-500 mb-4 list-disc pl-5 space-y-1">
-              <li>Implemented CRUD operations for book management</li>
-              <li>Designed structured database interactions</li>
-              <li>Handled user and borrowing workflows</li>
-              <li>Focused on clean logic and maintainability</li>
+              <li>Built backend using Flask</li>
+              <li>Implemented CRUD operations</li>
+              <li>Handled borrowing/return workflows</li>
+              <li>Used Jinja2 templates for UI</li>
             </ul>
 
             <p className="text-sm text-gray-500 mb-4">
-              Tech: Java, MySQL, Spring Boot
+              Tech: Python, Flask, HTML, CSS, Jinja2
             </p>
 
-            <div className="flex gap-4">
-              <a
-                href="https://github.com/renu5422/Bibilomanager"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 border rounded-lg text-sm hover:bg-black hover:text-white transition"
-              >
-                GitHub
-              </a>
-            </div>
-
-          </div>
+            <a
+              href="https://github.com/renu5422/BiblioManager"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 border rounded-lg text-sm hover:bg-black hover:text-white transition"
+            >
+              GitHub
+            </a>
+          </motion.div>
 
         </div>
 

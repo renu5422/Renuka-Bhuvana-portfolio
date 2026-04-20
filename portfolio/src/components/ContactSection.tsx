@@ -1,7 +1,16 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function ContactSection() {
   return (
     <section className="py-20 px-6 bg-gray-50 text-center">
-      <div className="max-w-xl mx-auto">
+      <motion.div
+        className="max-w-xl mx-auto"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
 
         <h2 className="text-3xl font-semibold mb-6">
           Let’s Connect
@@ -14,34 +23,37 @@ export default function ContactSection() {
 
         <div className="flex flex-wrap justify-center gap-4">
 
-          <a
+          <motion.a
             href="mailto:renukabhuvanac05@gmail.com"
+            whileHover={{ scale: 1.05 }}
             className="px-5 py-2 border rounded-lg hover:bg-black hover:text-white transition"
           >
             Email
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             href="https://github.com/renu5422"
             target="_blank"
             rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
             className="px-5 py-2 border rounded-lg hover:bg-black hover:text-white transition"
           >
             GitHub
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             href="https://linkedin.com/in/renuka-bhuvana"
             target="_blank"
             rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
             className="px-5 py-2 border rounded-lg hover:bg-black hover:text-white transition"
           >
             LinkedIn
-          </a>
+          </motion.a>
 
         </div>
 
-      </div>
+      </motion.div>
     </section>
   );
 }

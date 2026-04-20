@@ -8,11 +8,11 @@ export default function HeroSection() {
         </h1>
 
         <h2 className="text-xl text-gray-600">
-          AI-Augmented SDET
+          Java Full Stack Developer | Python | Aspiring SDET & AI Engineer
         </h2>
 
         <p className="text-gray-500">
-          Building automation frameworks and transitioning towards AI Engineering.
+          Building scalable applications, automation frameworks, and transitioning towards AI-driven engineering.
         </p>
 
         <a
