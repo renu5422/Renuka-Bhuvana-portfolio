@@ -19,7 +19,7 @@ export default function HeroSection() {
           href="#projects"
           className="inline-block rounded-lg bg-black px-6 py-3 text-white hover:bg-gray-800 transition"
         >
-          View My Projects
+          Explore My Projects
         </a>
 
       </div>
