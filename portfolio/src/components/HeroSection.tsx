@@ -3,15 +3,15 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { num: "5", label: "Projects" },
+  { num: "3", label: "Production Projects" },
   { num: "20+", label: "Validations" },
-  { num: "2", label: "Frameworks" },
+  { num: "AI", label: "Integrated" },
   { num: "8.01", label: "MCA CGPA" },
 ];
 
 const stack = [
-  "Python", "Playwright", "Java", "Selenium",
-  "Pytest", "TestNG", "API Testing", "GitHub Actions",
+  "Python", "FastAPI", "Django", "Next.js",
+  "PostgreSQL", "Playwright", "Pytest", "GitHub Actions",
 ];
 
 const container = {
@@ -56,7 +56,7 @@ export default function HeroSection() {
         <motion.div variants={item} className="flex items-center gap-3 mb-8">
           <span className="block w-8 h-px bg-[#2D9566]" />
           <span className="text-[11px] font-mono tracking-[0.16em] uppercase text-[#2D9566]">
-            QA Automation · SDET · Backend Validation
+            Software Engineer · Test Infrastructure · Backend Systems
           </span>
         </motion.div>
 
@@ -71,13 +71,14 @@ export default function HeroSection() {
 
         {/* Role */}
         <motion.p variants={item} className="font-mono text-sm tracking-[0.06em] text-white/40 mb-6">
-          SDET · Python · Playwright · Java · Selenium · API Testing · GitHub Actions
+          Python · FastAPI · Django · Next.js · PostgreSQL · Playwright · CI/CD
         </motion.p>
 
         {/* Summary */}
         <motion.p variants={item} className="text-[18px] leading-[1.8] text-white/60 font-light max-w-xl mb-10">
-          I build test automation systems — from UI frameworks to API validation pipelines.
-          18 months of continuous project work across 5 projects, 2 languages, and 2 automation frameworks.
+          I build production systems — and the test infrastructure that keeps them reliable.
+          Full-stack work across FastAPI, Django, and Next.js, with a backend and quality edge
+          most engineers pick up years later.
         </motion.p>
 
         {/* Stats — glassmorphism panel */}

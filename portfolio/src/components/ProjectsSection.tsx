@@ -5,51 +5,31 @@ import { motion } from "framer-motion";
 const projects = [
   {
     badge: "Lead Project", badgeClass: "bg-[#1A6B4A] text-white",
-    category: "API Testing · Backend Validation", dates: "Apr 2026 – Present",
+    category: "Full-Stack · FastAPI · Next.js", dates: "Apr 2026 – Present",
     title: "NyayaSetu AI",
-    description: "FastAPI-based legal information platform for IPC-to-BNS section mapping. My role: entire quality engineering layer — validation frameworks, deterministic test suites, CI pipelines.",
+    description: "Full-stack legal intelligence platform (FastAPI + Next.js + PostgreSQL) that maps IPC sections to the new BNS code. I built the backend rule engine, the data layer, and the validation framework that makes its output trustworthy.",
     bullets: ["20+ deterministic validation scenarios — API consistency, relational integrity, duplicate & contradiction detection", "Reusable Python validation utilities with stable error tokens for precise failure diagnosis", "GitHub Actions CI pipeline with structure validation, Pytest execution, and JUnit reporting", "Zero flaky test behavior — same input → same output → every time"],
     stack: ["Python", "FastAPI", "Pytest", "GitHub Actions", "JUnit", "JSON", "Git"],
     github: "https://github.com/renu5422/ipc-bns-transition-platform",
     dark: true,
   },
   {
-    badge: "Java SDET", badgeClass: "bg-[#EBF1FB] text-[#1A4FA0]",
-    category: "Java · Selenium · TestNG", dates: "Dec 2025 – Apr 2026",
-    title: "Java Selenium Automation Framework",
-    description: "Production-structured Java automation framework built from scratch — covering the full SDET Java stack used in enterprise environments.",
-    bullets: ["Page Object Model architecture with zero test-locator duplication", "Smoke and functional test coverage with stable assertion patterns", "Explicit synchronization handling to eliminate timing-based flakiness", "Maven dependency management with structured project layout"],
-    stack: ["Java", "Selenium WebDriver", "TestNG", "Maven", "POM", "Git"],
-    github: null,
-    dark: false,
-  },
-  {
-    badge: "Python E2E", badgeClass: "bg-[#E8F5EE] text-[#1A6B4A]",
-    category: "Python · Playwright · Pytest", dates: "Sep 2025 – Present",
-    title: "Playwright QA Automation Framework",
-    description: "End-to-end automation framework for real-world web application testing — including live production challenges like bot detection.",
-    bullets: ["POM architecture separating locator logic from test logic", "15+ E2E scenarios covering search, navigation, and result validation", "Diagnosed and resolved live bot-detection failures through HTTP-level analysis", "Reusable fixtures and modular design for parallel-ready execution"],
-    stack: ["Python", "Playwright", "Pytest", "POM", "CSS/XPath", "Git"],
-    github: "https://github.com/renu5422/qa-automation-journey",
-    dark: false,
-  },
-  {
-    badge: "QA Testing", badgeClass: "bg-[#FEF3E2] text-[#92590A]",
-    category: "Firebase · Firestore · AI Testing", dates: "Mar 2025 – Sep 2025",
-    title: "CourseHub — AI-Enhanced Platform Testing",
-    description: "7-month functional testing engagement on a live AI-enhanced learning platform covering authentication, cloud database, and AI feature validation.",
-    bullets: ["End-to-end functional testing across auth, enrollment, course management, and RBAC", "Firebase Authentication and Firestore data consistency validation", "AI content generation feature testing for output stability", "Data propagation edge case detection in eventually-consistent Firestore"],
-    stack: ["Firebase", "Firestore", "Python", "Functional Testing", "RBAC"],
+    badge: "Full-Stack", badgeClass: "bg-[#E8F5EE] text-[#1A6B4A]",
+    category: "Full-Stack · Next.js · Firebase", dates: "Mar 2025 – Sep 2025",
+    title: "CourseHub — AI-Enhanced Learning Platform",
+    description: "Full-stack AI learning platform (Next.js + Firebase + Firestore + Genkit) with course management, authentication, and AI-assisted tutoring — built and validated end to end, including real-time data consistency.",
+    bullets: ["Course creation, enrollment, and role-based access (RBAC) on a Next.js + Firebase stack", "Genkit AI integration for tutoring and content generation features", "Firestore real-time data sync with eventual-consistency edge-case handling", "Firebase Authentication with end-to-end functional validation"],
+    stack: ["Next.js", "Firebase", "Firestore", "Genkit", "RBAC"],
     github: "https://github.com/renu5422/CourseHub",
     dark: false,
   },
   {
     badge: "Backend Dev", badgeClass: "bg-[#F3F0FA] text-[#5B3FA0]",
-    category: "Python · Flask · SQLite", dates: "Dec 2024 – Apr 2025",
-    title: "BiblioManager — Python/Flask Backend",
-    description: "Full-stack Flask application built from scratch — the foundation that gave me developer-level understanding of backends before testing them.",
-    bullets: ["Full CRUD operations with clean route and data model separation", "SQLite relational database with structured data models", "Clean code architecture — routes, models, and business logic fully separated"],
-    stack: ["Python", "Flask", "SQLite", "CRUD", "Git"],
+    category: "Backend · Python · Databases", dates: "Dec 2024 – Apr 2025",
+    title: "BiblioManager — Smart Bookstore System",
+    description: "Full-stack bookstore built from scratch — browse, cart, checkout, orders, admin order-status, and email notifications, with a KNN-based book recommender and a rule-based support chatbot.",
+    bullets: ["Full e-commerce flow: catalog, cart, checkout, and order management", "KNN book recommender (scikit-learn) trained on a ratings dataset", "SQLite relational schema with admin roles, order status, and email notifications"],
+    stack: ["Python", "Streamlit", "SQLite", "scikit-learn", "Git"],
     github: "https://github.com/renu5422/BiblioManager",
     dark: false,
   },
@@ -72,8 +52,8 @@ export default function ProjectsSection() {
             <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-[#2D9566]">Projects</span>
           </div>
           <h2 className="text-[clamp(32px,5vw,52px)] font-light tracking-tight text-white">
-            18 months of{" "}
-            <strong className="font-semibold text-[#2D9566]">continuous building</strong>
+            Three production systems,{" "}
+            <strong className="font-semibold text-[#2D9566]">built end to end</strong>
           </h2>
         </motion.div>
 

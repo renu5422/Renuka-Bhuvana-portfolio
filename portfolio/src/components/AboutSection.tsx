@@ -6,44 +6,44 @@ import { Code, GitBranch, Settings, Zap, Database, CheckCircle } from "lucide-re
 const strengths = [
   {
     icon: Code,
-    title: "Framework Architect",
-    body: "Builds POM-based automation frameworks from scratch — maintainable, modular, and team-ready. Production-grade Java and Python implementations.",
-    tags: ["POM", "Playwright", "Selenium"],
+    title: "Full-Stack Builder",
+    body: "Builds complete systems end to end — FastAPI and Streamlit backends, Next.js frontends, SQLite and Firestore data layers. Three production projects shipped from requirements to deployment.",
+    tags: ["FastAPI", "Next.js", "Python"],
     color: "#1A6B4A"
   },
   {
-    icon: CheckCircle,
-    title: "Zero Flaky Tolerance",
-    body: "Designed NyayaSetu AI's entire test suite for deterministic behavior. Same input → same output → every time. No timing-based failures.",
-    tags: ["Deterministic", "Pytest", "Stability"],
+    icon: Database,
+    title: "Backend & Data Modeling",
+    body: "Designs relational schemas, rule engines, and APIs that hold up under real workloads. SQLite for transactional integrity, Firestore for real-time sync.",
+    tags: ["SQLite", "REST APIs", "Schema Design"],
+    color: "#1A6B4A"
+  },
+  {
+    icon: Zap,
+    title: "AI Integration",
+    body: "Wires LLMs into real products — Genkit-powered tutoring in CourseHub, a GPT support assistant in BiblioManager, and AI-assisted reasoning in NyayaSetu.",
+    tags: ["Genkit", "OpenAI", "LLM Apps"],
     color: "#1A6B4A"
   },
   {
     icon: GitBranch,
     title: "CI/CD Automation",
-    body: "GitHub Actions pipelines with Pytest execution, JUnit reporting, and automated structure validation on every push. 60% cycle time reduction.",
-    tags: ["GitHub Actions", "JUnit", "CI/CD"],
+    body: "GitHub Actions pipelines with automated test execution, JUnit reporting, and structure validation on every push. 60% cycle time reduction.",
+    tags: ["GitHub Actions", "CI/CD", "Docker"],
     color: "#1A6B4A"
   },
   {
-    icon: Zap,
-    title: "Developer-Turned-Tester",
-    body: "Built Flask, FastAPI, and Firebase backends before testing them. Tests from the inside out. Understands backend implications.",
-    tags: ["Flask", "FastAPI", "Firebase"],
-    color: "#1A6B4A"
-  },
-  {
-    icon: Database,
-    title: "Cross-Stack Automation",
-    body: "Python + Playwright for modern web E2E. Java + Selenium + TestNG for enterprise. Both frameworks production-structured.",
-    tags: ["Python", "Java", "TestNG"],
+    icon: CheckCircle,
+    title: "Quality-First Engineering",
+    body: "Designed NyayaSetu AI for deterministic behavior — same input, same output, every time. Zero flaky tests, with validation built in rather than bolted on.",
+    tags: ["Deterministic", "Pytest", "Reliability"],
     color: "#1A6B4A"
   },
   {
     icon: Settings,
-    title: "Data Integrity Expert",
-    body: "Implemented duplicate detection, contradiction detection, missing record validation validators. API-layer data consistency.",
-    tags: ["API Testing", "Validation", "Integrity"],
+    title: "Data Integrity",
+    body: "Built duplicate-detection, contradiction-detection, and missing-record validators that keep API-layer data consistent across complex relational mappings.",
+    tags: ["Validation", "Integrity", "API Testing"],
     color: "#1A6B4A"
   },
 ];
@@ -65,13 +65,14 @@ export default function AboutSection() {
             <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-[#1A6B4A]">About me</span>
           </div>
           <h2 className="text-[clamp(32px,5vw,52px)] font-light tracking-tight text-gray-900 mb-6">
-            Over the past <strong className="font-semibold text-[#1A6B4A]">18 months</strong> I've moved<br />
-            from building apps to automating them.
+            I'm a software engineer who builds <strong className="font-semibold text-[#1A6B4A]">full-stack systems</strong><br />
+            — and the validation that keeps them reliable.
           </h2>
           <p className="text-[16px] leading-[1.85] text-gray-500 font-light max-w-2xl">
-            BiblioManager gave me hands-on understanding of how Flask backends and databases work. I applied that to testing CourseHub — a live AI platform. 
-            Most recently with NyayaSetu AI, I moved into designing quality engineering systems — validation frameworks, deterministic test suites, 
-            relational integrity validators, and CI pipelines.
+            Across three production projects I've built backends with FastAPI, Streamlit, and Firebase, frontends with Next.js,
+            and data layers with SQLite and Firestore. BiblioManager taught me how backends and databases really work; CourseHub put that
+            into a live AI platform; and NyayaSetu AI is where I went deeper on engineering rigor — deterministic validation
+            frameworks, relational integrity checks, and CI pipelines. Quality isn't a separate track for me; it's how I build.
           </p>
         </motion.div>
 
