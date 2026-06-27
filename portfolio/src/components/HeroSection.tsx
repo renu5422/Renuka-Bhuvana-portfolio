@@ -10,7 +10,7 @@ const stats = [
 ];
 
 const stack = [
-  "Python", "FastAPI", "Django", "Next.js",
+  "Python", "FastAPI", "Streamlit", "Next.js",
   "PostgreSQL", "Playwright", "Pytest", "GitHub Actions",
 ];
 
@@ -71,14 +71,14 @@ export default function HeroSection() {
 
         {/* Role */}
         <motion.p variants={item} className="font-mono text-sm tracking-[0.06em] text-white/40 mb-6">
-          Python · FastAPI · Django · Next.js · PostgreSQL · Playwright · CI/CD
+          Python · FastAPI · Next.js · Streamlit · SQLite · Playwright · CI/CD
         </motion.p>
 
         {/* Summary */}
         <motion.p variants={item} className="text-[18px] leading-[1.8] text-white/60 font-light max-w-xl mb-10">
           I build production systems — and the test infrastructure that keeps them reliable.
-          Full-stack work across FastAPI, Django, and Next.js, with a backend and quality edge
-          most engineers pick up years later.
+          Full-stack work across FastAPI, Next.js, and Streamlit, plus AI-integrated features
+          (Genkit) and an AI-assisted development workflow.
         </motion.p>
 
         {/* Stats — glassmorphism panel */}

@@ -21,8 +21,8 @@ const strengths = [
   {
     icon: Zap,
     title: "AI Integration",
-    body: "Wires LLMs into real products — Genkit-powered tutoring in CourseHub, a GPT support assistant in BiblioManager, and AI-assisted reasoning in NyayaSetu.",
-    tags: ["Genkit", "OpenAI", "LLM Apps"],
+    body: "Wires LLMs into real products — Genkit-powered tutoring in CourseHub, an AI-assisted reasoning layer in NyayaSetu, and a scikit-learn recommender in BiblioManager.",
+    tags: ["Genkit", "Prompt Engineering", "scikit-learn"],
     color: "#1A6B4A"
   },
   {

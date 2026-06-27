@@ -32,7 +32,7 @@ export default function Home() {
       {/* Dark sticky nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A1A12]/90 backdrop-blur-md border-b border-white/10 px-6 h-14 flex items-center justify-between">
         <span className="font-mono text-[13px] font-medium text-[#2D9566] tracking-wide">
-          RB // SDET
+          RB // SWE · SDET
         </span>
         <ul className="hidden md:flex items-center gap-6 list-none">
           {navLinks.map((link) => (
