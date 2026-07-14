@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const metrics = [
   { num: "5", label: "Projects Completed" },
-  { num: "20+", label: "Validation Scenarios" },
+  { num: "200+", label: "Tests Passing in CI" },
   { num: "2", label: "Automation Frameworks" },
   { num: "18", label: "Months of Building" },
   { num: "8.01", label: "MCA CGPA" },
@@ -40,7 +40,7 @@ export default function ProfessionalSummarySection() {
                 scenarios, and contributed to GitHub Actions-based CI workflows.
               </p>
               <p className="text-[16px] leading-[1.85] text-gray-500 font-light">
-                Over 18 months of continuous project work — from building Flask and Firebase
+                Over 18 months of continuous project work — from building Streamlit and Firebase
                 backends to engineering API validation pipelines and CI-integrated test suites.
                 I test from the inside out: developer background, automation mindset, quality focus.
               </p>

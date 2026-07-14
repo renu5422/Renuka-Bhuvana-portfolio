@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 const projects = [
   {
     badge: "Lead Project", badgeClass: "bg-[#1A6B4A] text-white",
-    category: "Full-Stack · FastAPI · Next.js", dates: "Apr 2026 – Present",
+    category: "AI · LangGraph · FastAPI · Next.js", dates: "Apr 2026 – Present",
     title: "NyayaSetu AI",
-    description: "Full-stack legal intelligence platform (FastAPI + Next.js + PostgreSQL) that maps IPC sections to the new BNS code. I built the backend rule engine, the data layer, and the validation framework that makes its output trustworthy.",
-    bullets: ["20+ deterministic validation scenarios — API consistency, relational integrity, duplicate & contradiction detection", "Reusable Python validation utilities with stable error tokens for precise failure diagnosis", "GitHub Actions CI pipeline with structure validation, Pytest execution, and JUnit reporting", "Zero flaky test behavior — same input → same output → every time"],
-    stack: ["Python", "FastAPI", "Pytest", "GitHub Actions", "JUnit", "JSON", "Git"],
+    description: "Full-stack AI legal intelligence platform (FastAPI + Next.js) with 482 validated IPC→BNS mappings. Built a LangGraph agent, a scikit-learn ranking model, and an MCP server on top of a deterministic rules engine kept as ground truth — 200+ tests, CI via GitHub Actions.",
+    bullets: ["LangGraph agent: extract → retrieve → validate → compose, with a full audit trace on every answer", "scikit-learn TF-IDF ranking model (top-1 accuracy + MRR evaluation) and an MCP server exposing 5 tools", "482 validated IPC→BNS mappings behind a deterministic rules engine kept as ground truth — the LLM only composes", "200+ tests passing with GitHub Actions CI — zero flaky behavior, same input → same output"],
+    stack: ["Python", "FastAPI", "LangGraph", "scikit-learn", "MCP", "Pytest", "GitHub Actions"],
     github: "https://github.com/renu5422/ipc-bns-transition-platform",
     dark: true,
   },

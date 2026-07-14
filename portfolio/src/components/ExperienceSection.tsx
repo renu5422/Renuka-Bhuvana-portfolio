@@ -52,11 +52,11 @@ const experiences = [
     period: "Dec 2024 – Apr 2025", role: "Python Developer — Backend Engineering",
     org: "BiblioManager", type: "Project", badge: "bg-[#F3F0FA] text-[#5B3FA0]", current: false,
     bullets: [
-      "Built a Flask-based library management system from scratch with full CRUD operations",
+      "Built a Streamlit-based bookstore system from scratch with full CRUD operations",
       "Structured application with clean route and data model separation",
       "Implemented SQLite relational database with structured data models",
     ],
-    stack: ["Python", "Flask", "SQLite", "CRUD"],
+    stack: ["Python", "Streamlit", "SQLite", "scikit-learn"],
   },
 ];
 

@@ -25,8 +25,8 @@ const strengths = [
   {
     icon: Brain,
     title: "Developer-Turned-Tester",
-    body: "Built Flask, FastAPI, and Firebase backends before testing them — tests from the inside out.",
-    tags: ["Flask", "FastAPI", "Firebase"]
+    body: "Built FastAPI, Streamlit, and Firebase backends before testing them — tests from the inside out.",
+    tags: ["FastAPI", "Streamlit", "Firebase"]
   },
   {
     icon: Layers,

@@ -26,7 +26,7 @@ const skillGroups = [
     label: "Programming",
     skills: [
       { name: "Python", tier: "primary" }, { name: "Java", tier: "primary" },
-      { name: "SQL", tier: "secondary" }, { name: "Flask", tier: "secondary" },
+      { name: "SQL", tier: "secondary" }, { name: "Streamlit", tier: "secondary" },
       { name: "JavaScript", tier: "tertiary" },
     ],
   },

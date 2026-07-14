@@ -21,8 +21,8 @@ const strengths = [
   {
     icon: Zap,
     title: "AI Integration",
-    body: "Wires LLMs into real products — Genkit-powered tutoring in CourseHub, an AI-assisted reasoning layer in NyayaSetu, and a scikit-learn recommender in BiblioManager.",
-    tags: ["Genkit", "Prompt Engineering", "scikit-learn"],
+    body: "Builds agentic AI — a LangGraph agent + MCP server + scikit-learn ranking model in NyayaSetu, Genkit-powered tutoring in CourseHub, and a scikit-learn recommender in BiblioManager.",
+    tags: ["LangGraph", "MCP", "Genkit"],
     color: "#1A6B4A"
   },
   {

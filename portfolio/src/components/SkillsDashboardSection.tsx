@@ -23,7 +23,7 @@ const skillGroups = [
     label: "Programming", color: "#7C3AED",
     skills: [
       { name: "Python", level: 85 }, { name: "Java", level: 75 },
-      { name: "SQL", level: 70 }, { name: "Flask", level: 68 },
+      { name: "SQL", level: 70 }, { name: "Streamlit", level: 72 },
     ],
   },
   {
@@ -46,7 +46,7 @@ const tools = [
 
 export default function SkillsDashboardSection() {
   return (
-    <section id="skills-dashboard" className="py-24 px-6 bg-white">
+    <section id="skills" className="py-24 px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

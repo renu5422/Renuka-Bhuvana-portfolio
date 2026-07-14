@@ -8,13 +8,12 @@ import ProjectsSection from "../components/ProjectsSection";
 import AchievementsSection from "../components/AchievementsSection";
 import EducationSection from "../components/EducationSection";
 import CareerGoalsSection from "../components/CareerGoalsSection";
-import TestimonialsSection from "../components/TestimonialsSection";
 import ServicesSection from "../components/ServicesSection";
 import ContactSection from "../components/ContactSection";
 
 export const metadata = {
-  title: "Renuka Bhuvana — SDET & QA Automation Engineer",
-  description: "SDET | QA Automation Engineer | Python · Playwright · Java · Selenium | API Testing | GitHub Actions CI/CD | Bengaluru",
+  title: "Renuka Bhuvana — Software Engineer · SDET",
+  description: "Software Engineer & SDET | Python · FastAPI · Next.js · LangGraph · Playwright · Selenium | AI-integrated systems and the test automation that keeps them reliable | Bengaluru",
 };
 
 const navLinks = [
@@ -64,7 +63,6 @@ export default function Home() {
         <AchievementsSection />
         <EducationSection />
         <CareerGoalsSection />
-        <TestimonialsSection />
         <ServicesSection />
         <ContactSection />
       </main>

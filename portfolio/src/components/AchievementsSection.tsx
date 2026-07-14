@@ -6,9 +6,9 @@ import { Award, Cpu, CheckCircle2, Zap, Target, Database } from "lucide-react";
 const achievements = [
   {
     icon: Award,
-    metric: "20+",
-    title: "Deterministic Validation Scenarios",
-    body: "Implemented across NyayaSetu AI — API consistency, relational integrity, duplicate & contradiction detection. Zero flaky failures.",
+    metric: "200+",
+    title: "Tests Passing in CI",
+    body: "Across NyayaSetu AI — deterministic validation scenarios, API consistency, relational integrity, duplicate & contradiction detection. Zero flaky failures.",
     tag: "NyayaSetu AI · 2026"
   },
   {
