@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const goals = [
-  { term: "Immediate", icon: "🎯", title: "Entry-level SDET / QA Automation Engineer", body: "Join a team that ships fast and needs automation that keeps up — contribute to test quality from day one using Playwright, Java/Selenium, and API testing." },
+  { term: "Immediate", icon: "🎯", title: "SDET / Software Engineer (early career)", body: "Join a team that ships fast and needs automation that keeps up — contribute to test quality from day one using Playwright, Java/Selenium, and API testing." },
   { term: "6–12 Months", icon: "📈", title: "API & Performance Testing", body: "Deepen API testing expertise with Rest Assured and add performance testing exposure using Locust or k6 — moving toward full-stack quality engineering." },
   { term: "1–2 Years", icon: "🤖", title: "AI-Assisted Quality Engineering", body: "Build systems that use LLMs to generate test cases, detect regressions, and validate AI feature outputs — the intersection of automation and intelligence." },
 ];
@@ -58,7 +58,7 @@ export default function CareerGoalsSection() {
           className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 md:p-10"
         >
           <h3 className="text-[clamp(18px,2.5vw,24px)] font-light text-white leading-snug mb-6">
-            Looking for an entry-level SDET or QA Automation Engineer role where I can{" "}
+            Looking for an SDET or Software Engineer role where I can{" "}
             <strong className="font-semibold text-[#2D9566]">contribute to test quality from day one.</strong>
           </h3>
           <ul className="space-y-3 mb-8">

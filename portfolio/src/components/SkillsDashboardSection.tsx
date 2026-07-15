@@ -6,31 +6,32 @@ const skillGroups = [
   {
     label: "Test Automation", color: "#1A6B4A",
     skills: [
-      { name: "Playwright", level: 85 }, { name: "Selenium WebDriver", level: 80 },
-      { name: "Pytest", level: 85 }, { name: "TestNG", level: 75 },
-      { name: "Page Object Model", level: 85 }, { name: "JUnit", level: 65 },
+      { name: "Playwright" }, { name: "Selenium WebDriver" },
+      { name: "Pytest" }, { name: "TestNG" },
+      { name: "Page Object Model" }, { name: "JUnit" },
     ],
   },
   {
     label: "API & Backend", color: "#2563EB",
     skills: [
-      { name: "API Testing", level: 80 }, { name: "Postman", level: 78 },
-      { name: "FastAPI", level: 72 }, { name: "REST APIs", level: 80 },
-      { name: "Deterministic Testing", level: 82 }, { name: "Backend Validation", level: 78 },
+      { name: "API Testing" }, { name: "Postman" },
+      { name: "FastAPI" }, { name: "REST APIs" },
+      { name: "Deterministic Testing" }, { name: "Backend Validation" },
     ],
   },
   {
     label: "Programming", color: "#7C3AED",
     skills: [
-      { name: "Python", level: 85 }, { name: "Java", level: 75 },
-      { name: "SQL", level: 70 }, { name: "Streamlit", level: 72 },
+      { name: "Python" }, { name: "Java" },
+      { name: "SQL" }, { name: "Streamlit" },
+      { name: "LangGraph" }, { name: "scikit-learn" },
     ],
   },
   {
     label: "CI/CD & DevOps", color: "#D97706",
     skills: [
-      { name: "GitHub Actions", level: 78 }, { name: "Git", level: 85 },
-      { name: "Maven", level: 72 }, { name: "CI/CD Pipelines", level: 75 },
+      { name: "GitHub Actions" }, { name: "Git" },
+      { name: "Maven" }, { name: "CI/CD Pipelines" },
     ],
   },
 ];
@@ -60,11 +61,11 @@ export default function SkillsDashboardSection() {
             <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-[#1A6B4A]">Skills Dashboard</span>
           </div>
           <h2 className="text-[clamp(32px,5vw,52px)] font-light tracking-tight text-gray-900">
-            Proficiency <strong className="font-semibold text-[#1A6B4A]">breakdown</strong>
+            What I <strong className="font-semibold text-[#1A6B4A]">work with</strong>
           </h2>
         </motion.div>
 
-        {/* Skill bars */}
+        {/* Skill pills — grouped, evidence-backed (see Projects) */}
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {skillGroups.map((group, gi) => (
             <motion.div
@@ -78,24 +79,19 @@ export default function SkillsDashboardSection() {
               <div className="text-[11px] font-mono tracking-[0.1em] uppercase mb-5 pb-3 border-b border-gray-200" style={{ color: group.color }}>
                 {group.label}
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-wrap gap-2">
                 {group.skills.map((skill, si) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-1.5">
-                      <span className="text-[13px] text-gray-700 font-medium">{skill.name}</span>
-                      <span className="text-[11px] font-mono text-gray-400">{skill.level}%</span>
-                    </div>
-                    <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        transition={{ duration: 0.8, delay: gi * 0.08 + si * 0.05 }}
-                        viewport={{ once: true }}
-                        className="h-full rounded-full"
-                        style={{ background: group.color }}
-                      />
-                    </div>
-                  </div>
+                  <motion.span
+                    key={skill.name}
+                    initial={{ opacity: 0, scale: 0.92 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3, delay: gi * 0.08 + si * 0.04 }}
+                    viewport={{ once: true }}
+                    className="px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-[13px] text-gray-700 font-medium hover:shadow-sm transition-shadow cursor-default"
+                    style={{ borderLeftWidth: "3px", borderLeftColor: group.color }}
+                  >
+                    {skill.name}
+                  </motion.span>
                 ))}
               </div>
             </motion.div>

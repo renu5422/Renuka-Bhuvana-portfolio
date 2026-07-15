@@ -1,6 +1,5 @@
 import HeroSection from "../components/HeroSection";
 import ProfessionalSummarySection from "../components/ProfessionalSummarySection";
-import KeyStrengthsSection from "../components/KeyStrengthsSection";
 import AboutSection from "../components/AboutSection";
 import ExperienceSection from "../components/ExperienceSection";
 import SkillsDashboardSection from "../components/SkillsDashboardSection";
@@ -55,7 +54,6 @@ export default function Home() {
       <main className="text-slate-900 pt-14">
         <HeroSection />
         <ProfessionalSummarySection />
-        <KeyStrengthsSection />
         <AboutSection />
         <ExperienceSection />
         <SkillsDashboardSection />
