@@ -4,22 +4,21 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    period: "Apr 2026 – Present", role: "SDET — API Testing & Backend Validation",
-    org: "NyayaSetu AI", type: "Project", badge: "bg-[#1A6B4A] text-white", current: true,
+    period: "Apr 2026 – Present", role: "NyayaSetu AI — API Testing & Backend Validation",
+    org: "Personal Project", type: "Project", badge: "bg-[#1A6B4A] text-white", current: true,
     bullets: [
       "Designed and validated backend API workflows for a FastAPI-based legal information platform",
-      "Implemented 20+ deterministic validation scenarios covering API response consistency and relational mapping integrity",
-      "Engineered GitHub Actions CI pipeline with Pytest execution and JUnit report generation",
-      "Built reusable Python validation utilities with stable error tokens for precise failure diagnosis",
-      "Achieved zero flaky test behavior across the full test suite",
+      "Wrote 200+ Pytest unit and API tests (FastAPI TestClient), including bad-input cases that must return clear error codes, never a 500",
+      "Built a GitHub Actions CI pipeline: flake8 lint, then Pytest with a 70% coverage gate",
+      "Built duplicate- and contradiction-detection validators for the IPC→BNS mapping data",
     ],
-    stack: ["Python", "FastAPI", "Pytest", "GitHub Actions", "JUnit"],
+    stack: ["Python", "FastAPI", "Pytest", "GitHub Actions", "Docker"],
   },
   {
-    period: "Dec 2025 – Apr 2026", role: "QA Automation Engineer — Java Selenium Framework",
-    org: "Independent Project", type: "Project", badge: "bg-[#EBF1FB] text-[#1A4FA0]", current: false,
+    period: "Dec 2025 – Apr 2026", role: "Selenium Test Automation Framework (Java)",
+    org: "Personal Project", type: "Project", badge: "bg-[#EBF1FB] text-[#1A4FA0]", current: false,
     bullets: [
-      "Built a production-structured Java automation framework from scratch using Selenium WebDriver, TestNG, and Maven",
+      "Built a Java automation framework from scratch using Selenium WebDriver, TestNG, and Maven",
       "Implemented Page Object Model architecture with zero test-locator duplication",
       "Automated smoke and functional test scenarios with stable assertion patterns",
       "Eliminated timing-based flakiness through explicit synchronization handling",
@@ -27,30 +26,30 @@ const experiences = [
     stack: ["Java", "Selenium WebDriver", "TestNG", "Maven", "POM"],
   },
   {
-    period: "Sep 2025 – Present", role: "QA Automation Engineer — Playwright Framework",
-    org: "Independent Project", type: "Project", badge: "bg-[#E8F5EE] text-[#1A6B4A]", current: true,
+    period: "Sep 2025 – Present", role: "Playwright Test Automation Framework (Python)",
+    org: "Personal Project", type: "Project", badge: "bg-[#E8F5EE] text-[#1A6B4A]", current: true,
     bullets: [
-      "Architected a Playwright + Pytest end-to-end automation framework with POM architecture",
-      "Automated 15+ real-world E2E scenarios covering search, navigation, and result validation",
-      "Diagnosed and resolved live bot-detection failures through HTTP-level analysis",
+      "Built a Playwright + Pytest end-to-end automation framework with POM architecture",
+      "Automated 15+ E2E scenarios covering search, navigation, and result validation",
+      "Debugged intermittent failures by analysing HTTP headers and request timing",
       "Designed reusable fixtures and modular test structure for parallel-ready execution",
     ],
     stack: ["Python", "Playwright", "Pytest", "POM", "Git"],
   },
   {
-    period: "Mar 2025 – Sep 2025", role: "QA Engineer — Functional & Firebase Testing",
-    org: "CourseHub", type: "Project", badge: "bg-[#FEF3E2] text-[#92590A]", current: false,
+    period: "Mar 2025 – Sep 2025", role: "CourseHub — Functional & Firebase Testing",
+    org: "Personal Project", type: "Project", badge: "bg-[#FEF3E2] text-[#92590A]", current: false,
     bullets: [
       "Executed functional testing across authentication, enrollment, course management, and RBAC workflows",
       "Validated Firebase Authentication flows and Firestore data consistency across concurrent users",
       "Tested AI-assisted content generation features for output stability and error handling",
       "Caught data propagation edge cases in eventually-consistent Firestore",
     ],
-    stack: ["Firebase", "Firestore", "Python", "Functional Testing"],
+    stack: ["Next.js", "TypeScript", "Firebase", "Firestore", "Genkit"],
   },
   {
-    period: "Dec 2024 – Apr 2025", role: "Python Developer — Backend Engineering",
-    org: "BiblioManager", type: "Project", badge: "bg-[#F3F0FA] text-[#5B3FA0]", current: false,
+    period: "Dec 2024 – Apr 2025", role: "BiblioManager — Python Backend",
+    org: "Personal Project", type: "Project", badge: "bg-[#F3F0FA] text-[#5B3FA0]", current: false,
     bullets: [
       "Built a Streamlit-based bookstore system from scratch with full CRUD operations",
       "Structured application with clean route and data model separation",
@@ -73,10 +72,10 @@ export default function ExperienceSection() {
         >
           <div className="flex items-center gap-3 mb-4">
             <span className="block w-5 h-px bg-[#1A6B4A]" />
-            <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-[#1A6B4A]">Experience</span>
+            <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-[#1A6B4A]">Project Timeline</span>
           </div>
           <h2 className="text-[clamp(32px,5vw,52px)] font-light tracking-tight text-gray-900">
-            18 months of <strong className="font-semibold text-[#1A6B4A]">project work</strong>
+            18 months of <strong className="font-semibold text-[#1A6B4A]">personal projects</strong>
           </h2>
         </motion.div>
 

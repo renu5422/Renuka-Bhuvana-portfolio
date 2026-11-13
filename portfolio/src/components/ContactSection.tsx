@@ -67,7 +67,7 @@ export default function ContactSection() {
           </h2>
           <p className="text-[16px] text-white/50 font-light mt-4 max-w-lg leading-relaxed">
             Actively looking for SDET and Software Engineer roles in Bengaluru.
-            Open to full-time positions and freelance automation projects.
+            Open to full-time positions — on-site, hybrid or remote.
           </p>
         </motion.div>
 

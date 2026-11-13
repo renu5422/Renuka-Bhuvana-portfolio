@@ -8,13 +8,13 @@ const skillGroups = [
     skills: [
       { name: "Playwright" }, { name: "Selenium WebDriver" },
       { name: "Pytest" }, { name: "TestNG" },
-      { name: "Page Object Model" }, { name: "JUnit" },
+      { name: "Page Object Model" }, { name: "Maven" },
     ],
   },
   {
     label: "API & Backend", color: "#2563EB",
     skills: [
-      { name: "API Testing" }, { name: "Postman" },
+      { name: "API Testing (TestClient)" }, { name: "LangChain" },
       { name: "FastAPI" }, { name: "REST APIs" },
       { name: "Deterministic Testing" }, { name: "Backend Validation" },
     ],
@@ -31,16 +31,16 @@ const skillGroups = [
     label: "CI/CD & DevOps", color: "#D97706",
     skills: [
       { name: "GitHub Actions" }, { name: "Git" },
-      { name: "Maven" }, { name: "CI/CD Pipelines" },
+      { name: "Docker Compose" }, { name: "CI/CD Pipelines" },
     ],
   },
 ];
 
 const tools = [
-  { name: "VS Code", icon: "💻" }, { name: "Postman", icon: "🔌" },
+  { name: "VS Code", icon: "💻" }, { name: "PyCharm", icon: "🔌" },
   { name: "GitHub", icon: "🐙" }, { name: "Maven", icon: "📦" },
-  { name: "Firebase", icon: "🔥" }, { name: "MySQL", icon: "🗄️" },
-  { name: "SQLite", icon: "🗃️" }, { name: "JIRA", icon: "📋" },
+  { name: "Firebase", icon: "🔥" }, { name: "Firestore", icon: "🗄️" },
+  { name: "SQLite", icon: "🗃️" }, { name: "Docker", icon: "📋" },
   { name: "FastAPI", icon: "⚡" }, { name: "Pytest", icon: "🧪" },
   { name: "GitHub Actions", icon: "⚙️" }, { name: "TestNG", icon: "✅" },
 ];

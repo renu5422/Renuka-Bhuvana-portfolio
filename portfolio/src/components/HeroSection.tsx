@@ -3,15 +3,15 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { num: "3", label: "Production Projects" },
+  { num: "5", label: "Projects on GitHub" },
   { num: "200+", label: "Tests in CI" },
   { num: "AI", label: "Integrated" },
-  { num: "8.01", label: "MCA CGPA" },
+  { num: "8.03", label: "MCA CGPA" },
 ];
 
 const stack = [
   "Python", "FastAPI", "Streamlit", "Next.js",
-  "PostgreSQL", "Playwright", "Pytest", "GitHub Actions",
+  "LangGraph", "Playwright", "Pytest", "GitHub Actions",
 ];
 
 const container = {
@@ -43,7 +43,7 @@ export default function HeroSection() {
 
       {/* Code watermark */}
       <div aria-hidden="true" className="absolute right-8 top-1/2 -translate-y-1/2 text-right text-[11px] leading-relaxed font-mono text-white opacity-[0.06] pointer-events-none select-none hidden xl:block space-y-0.5">
-        {["def validate_response(data):","  assert data[\"status\"] == 200","  assert len(data[\"results\"]) > 0","  return True","","@pytest.fixture(scope=\"session\")","def api_client():","  return APIClient(base_url)","","class SearchPage(BasePage):","  def __init__(self, page):","    self.box = page.locator(\"#search\")","","✓ 20 passed in 1.42s","✓ CI pipeline: success","✓ 0 flaky tests"].map((line, i) => <div key={i}>{line || <>&nbsp;</>}</div>)}
+        {["def validate_response(data):","  assert data[\"status\"] == 200","  assert len(data[\"results\"]) > 0","  return True","","@pytest.fixture(scope=\"session\")","def api_client():","  return APIClient(base_url)","","class SearchPage(BasePage):","  def __init__(self, page):","    self.box = page.locator(\"#search\")","","✓ 20 passed in 1.42s","✓ CI pipeline: success"].map((line, i) => <div key={i}>{line || <>&nbsp;</>}</div>)}
       </div>
 
       <motion.div
@@ -76,7 +76,7 @@ export default function HeroSection() {
 
         {/* Summary */}
         <motion.p variants={item} className="text-[18px] leading-[1.8] text-white/60 font-light max-w-xl mb-10">
-          I build production systems — and the test infrastructure that keeps them reliable.
+          I build full-stack systems — and the automated tests that prove they work.
           Full-stack work across FastAPI, Next.js, and Streamlit, plus AI-integrated features
           (Genkit) and an AI-assisted development workflow.
         </motion.p>

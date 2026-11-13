@@ -7,14 +7,14 @@ const strengths = [
   {
     icon: Code,
     title: "Full-Stack Builder",
-    body: "Builds complete systems end to end — FastAPI and Streamlit backends, Next.js frontends, SQLite and Firestore data layers. Three production projects shipped from requirements to deployment.",
+    body: "Builds complete systems end to end — FastAPI and Streamlit backends, Next.js frontends, SQLite and Firestore data layers. Three full-stack projects built from requirements to deployment.",
     tags: ["FastAPI", "Next.js", "Python"],
     color: "#1A6B4A"
   },
   {
     icon: Database,
     title: "Backend & Data Modeling",
-    body: "Designs relational schemas, rule engines, and APIs that hold up under real workloads. SQLite for transactional integrity, Firestore for real-time sync.",
+    body: "Designs relational schemas, rule engines, and REST APIs. SQLite for relational data, Firestore for real-time sync.",
     tags: ["SQLite", "REST APIs", "Schema Design"],
     color: "#1A6B4A"
   },
@@ -28,14 +28,14 @@ const strengths = [
   {
     icon: GitBranch,
     title: "CI/CD Automation",
-    body: "GitHub Actions pipelines with automated test execution, JUnit reporting, and structure validation on every push. 60% cycle time reduction.",
+    body: "GitHub Actions pipeline running flake8 and 200+ Pytest tests on every push, behind a 70% coverage gate. Full stack containerised with Docker Compose.",
     tags: ["GitHub Actions", "CI/CD", "Docker"],
     color: "#1A6B4A"
   },
   {
     icon: CheckCircle,
     title: "Quality-First Engineering",
-    body: "Designed NyayaSetu AI for deterministic behavior — same input, same output, every time. Zero flaky tests, with validation built in rather than bolted on.",
+    body: "Designed NyayaSetu AI for deterministic behavior — a rules engine as ground truth, an offline fallback for the LLM, and validation built in rather than bolted on.",
     tags: ["Deterministic", "Pytest", "Reliability"],
     color: "#1A6B4A"
   },
@@ -69,7 +69,7 @@ export default function AboutSection() {
             — and the validation that keeps them reliable.
           </h2>
           <p className="text-[16px] leading-[1.85] text-gray-500 font-light max-w-2xl">
-            Across three production projects I've built backends with FastAPI, Streamlit, and Firebase, frontends with Next.js,
+            Across three full-stack projects I've built backends with FastAPI, Streamlit, and Firebase, frontends with Next.js,
             and data layers with SQLite and Firestore. BiblioManager taught me how backends and databases really work; CourseHub put that
             into a live AI platform; and NyayaSetu AI is where I went deeper on engineering rigor — deterministic validation
             frameworks, relational integrity checks, and CI pipelines. Quality isn't a separate track for me; it's how I build.

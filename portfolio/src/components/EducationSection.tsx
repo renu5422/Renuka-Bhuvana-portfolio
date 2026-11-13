@@ -3,13 +3,11 @@
 import { motion } from "framer-motion";
 
 const education = [
-  { period: "2023 – 2025", degree: "Master of Computer Applications (MCA)", institution: "Seshadripuram College, Bengaluru", cgpa: "CGPA 8.01", highlight: true },
-  { period: "2020 – 2023", degree: "Bachelor of Computer Applications (BCA)", institution: "BMS College for Women, Bengaluru", cgpa: "CGPA 7.90", highlight: false },
+  { period: "2023 – 2025", degree: "Master of Computer Applications (MCA)", institution: "Seshadripuram College, Bengaluru City University", cgpa: "CGPA 8.03 · First Class Exemplary", highlight: true },
+  { period: "2020 – 2023", degree: "Bachelor of Computer Applications (BCA)", institution: "BMS College for Women, Bengaluru City University", cgpa: "CGPA 7.94 · First Class Distinction", highlight: false },
 ];
 
-const certifications = [
-  { icon: "☕", name: "Java Full Stack Certification", issuer: "Certified" },
-  { icon: "📊", name: "Power BI Certification", issuer: "Certified" },
+const certifications: { icon: string; name: string; issuer: string }[] = [
 ];
 
 export default function EducationSection() {
@@ -25,7 +23,7 @@ export default function EducationSection() {
         >
           <div className="flex items-center gap-3 mb-4">
             <span className="block w-5 h-px bg-[#1A6B4A]" />
-            <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-[#1A6B4A]">Education & Certifications</span>
+            <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-[#1A6B4A]">Education</span>
           </div>
           <h2 className="text-[clamp(32px,5vw,52px)] font-light tracking-tight text-gray-900">
             Academic <strong className="font-semibold text-[#1A6B4A]">background</strong>
@@ -66,7 +64,7 @@ export default function EducationSection() {
 
           {/* Certifications */}
           <div>
-            <div className="text-[11px] font-mono tracking-[0.1em] uppercase text-gray-400 mb-6">Certifications</div>
+            <div className="text-[11px] font-mono tracking-[0.1em] uppercase text-gray-400 mb-6">Learning</div>
             <div className="flex flex-col gap-3">
               {certifications.map((c, i) => (
                 <motion.div

@@ -7,8 +7,8 @@ const metrics = [
   { num: "200+", label: "Tests Passing in CI" },
   { num: "2", label: "Automation Frameworks" },
   { num: "18", label: "Months of Building" },
-  { num: "8.01", label: "MCA CGPA" },
-  { num: "2", label: "Certifications" },
+  { num: "8.03", label: "MCA CGPA" },
+  { num: "5", label: "MCP Tools Built" },
 ];
 
 export default function ProfessionalSummarySection() {
@@ -34,14 +34,13 @@ export default function ProfessionalSummarySection() {
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
               <p className="text-[16px] leading-[1.85] text-gray-500 font-light mb-6">
-                QA Automation Engineer with hands-on experience in test automation,
-                API validation, backend quality engineering, and debugging. Built automation
-                frameworks using Selenium and Playwright, developed deterministic validation
-                scenarios, and contributed to GitHub Actions-based CI workflows.
+                Software engineer who writes the application and the tests that try to break it.
+                MCA 2025 graduate building in Python (FastAPI) and Next.js, with test automation in
+                Pytest, Playwright and Selenium, and CI in GitHub Actions.
               </p>
               <p className="text-[16px] leading-[1.85] text-gray-500 font-light">
                 Over 18 months of continuous project work — from building Streamlit and Firebase
-                backends to engineering API validation pipelines and CI-integrated test suites.
+                backends to a FastAPI + LangGraph platform with 200+ tests running in CI.
                 I test from the inside out: developer background, automation mindset, quality focus.
               </p>
             </div>

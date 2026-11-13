@@ -62,7 +62,7 @@ export default function CareerGoalsSection() {
             <strong className="font-semibold text-[#2D9566]">contribute to test quality from day one.</strong>
           </h3>
           <ul className="space-y-3 mb-8">
-            {["Open to full-time roles in Bengaluru — on-site, hybrid, or remote", "Bring Playwright + Java/Selenium + API testing skills into a real codebase", "Available for freelance automation projects and short-term contracts", "Target companies: product-led teams, AI-first startups, quality-focused engineering orgs"].map((item) => (
+            {["Open to full-time roles in Bengaluru — on-site, hybrid, or remote", "Bring Playwright + Java/Selenium + API testing skills into a real codebase", "Target companies: product-led teams, AI-first startups, quality-focused engineering orgs"].map((item) => (
               <li key={item} className="flex items-start gap-3 text-[14px] text-white/60 leading-relaxed">
                 <span className="text-[#2D9566] font-mono mt-[3px] flex-shrink-0">◆</span>
                 <span>{item}</span>

@@ -8,8 +8,8 @@ const projects = [
     category: "AI · LangGraph · FastAPI · Next.js", dates: "Apr 2026 – Present",
     title: "NyayaSetu AI",
     description: "Full-stack AI legal intelligence platform (FastAPI + Next.js) with 482 validated IPC→BNS mappings. Built a LangGraph agent, a scikit-learn ranking model, and an MCP server on top of a deterministic rules engine kept as ground truth — 200+ tests, CI via GitHub Actions.",
-    bullets: ["LangGraph agent: extract → retrieve → validate → compose, with a full audit trace on every answer", "scikit-learn TF-IDF ranking model (top-1 accuracy + MRR evaluation) and an MCP server exposing 5 tools", "482 validated IPC→BNS mappings behind a deterministic rules engine kept as ground truth — the LLM only composes", "200+ tests passing with GitHub Actions CI — zero flaky behavior, same input → same output"],
-    stack: ["Python", "FastAPI", "LangGraph", "scikit-learn", "MCP", "Pytest", "GitHub Actions"],
+    bullets: ["LangGraph agent: extract → retrieve → validate → compose, with a full audit trace on every answer", "scikit-learn TF-IDF ranking model (top-1 accuracy + MRR evaluation) and an MCP server exposing 5 tools", "482 validated IPC→BNS mappings behind a deterministic rules engine kept as ground truth — the LLM only composes", "200+ Pytest tests in GitHub Actions CI with a 70% coverage gate; compose step uses a pluggable LLM with a deterministic offline fallback"],
+    stack: ["Python", "FastAPI", "LangGraph", "scikit-learn", "MCP", "Pytest", "Docker", "GitHub Actions"],
     github: "https://github.com/renu5422/ipc-bns-transition-platform",
     dark: true,
   },
@@ -30,7 +30,7 @@ const projects = [
     description: "Full-stack bookstore built from scratch — browse, cart, checkout, orders, admin order-status, and email notifications, with a KNN-based book recommender and a rule-based support chatbot.",
     bullets: ["Full e-commerce flow: catalog, cart, checkout, and order management", "KNN book recommender (scikit-learn) trained on a ratings dataset", "SQLite relational schema with admin roles, order status, and email notifications"],
     stack: ["Python", "Streamlit", "SQLite", "scikit-learn", "Git"],
-    github: "https://github.com/renu5422/BiblioManager",
+    github: "https://github.com/renu5422/Bibilomanager",
     dark: false,
   },
 ];
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
             <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-[#2D9566]">Projects</span>
           </div>
           <h2 className="text-[clamp(32px,5vw,52px)] font-light tracking-tight text-white">
-            Three production systems,{" "}
+            Three full-stack systems,{" "}
             <strong className="font-semibold text-[#2D9566]">built end to end</strong>
           </h2>
         </motion.div>
