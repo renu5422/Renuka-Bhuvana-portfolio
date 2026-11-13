@@ -7,7 +7,6 @@ import ProjectsSection from "../components/ProjectsSection";
 import AchievementsSection from "../components/AchievementsSection";
 import EducationSection from "../components/EducationSection";
 import CareerGoalsSection from "../components/CareerGoalsSection";
-import ServicesSection from "../components/ServicesSection";
 import ContactSection from "../components/ContactSection";
 
 export const metadata = {
@@ -17,7 +16,7 @@ export const metadata = {
 
 const navLinks = [
   { label: "Summary", href: "#summary" },
-  { label: "Experience", href: "#experience" },
+  { label: "Timeline", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Achievements", href: "#achievements" },
@@ -61,7 +60,6 @@ export default function Home() {
         <AchievementsSection />
         <EducationSection />
         <CareerGoalsSection />
-        <ServicesSection />
         <ContactSection />
       </main>
     </>
