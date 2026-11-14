@@ -66,7 +66,7 @@ export default function ContactSection() {
             Let&apos;s <strong className="font-semibold text-[#2D9566]">talk</strong>
           </h2>
           <p className="text-[16px] text-white/50 font-light mt-4 max-w-lg leading-relaxed">
-            Actively looking for SDET and Software Engineer roles in Bengaluru.
+            Actively looking for Software Engineer, SDET and AI Engineer roles in Bengaluru.
             Open to full-time positions — on-site, hybrid or remote.
           </p>
         </motion.div>

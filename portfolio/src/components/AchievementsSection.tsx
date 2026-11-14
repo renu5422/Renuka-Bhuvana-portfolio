@@ -6,9 +6,9 @@ import { Award, Cpu, CheckCircle2, Zap, Target, Database } from "lucide-react";
 const achievements = [
   {
     icon: Award,
-    metric: "200+",
-    title: "Tests Running in CI",
-    body: "NyayaSetu AI unit and API tests — mapping search, ML ranking, auth, agent graph, and duplicate & contradiction detection — run on every push.",
+    metric: "260+",
+    title: "Pytest Tests in CI (85% Coverage)",
+    body: "NyayaSetu AI unit and API tests — mapping search, ML ranking, JWT auth, agent graph, grounding, and duplicate & contradiction detection — run on every push.",
     tag: "NyayaSetu AI · 2026"
   },
   {
@@ -20,9 +20,9 @@ const achievements = [
   },
   {
     icon: CheckCircle2,
-    metric: "70%",
-    title: "Coverage Gate in CI",
-    body: "GitHub Actions runs flake8, then Pytest with coverage; the build fails if backend coverage drops below 70%.",
+    metric: "25",
+    title: "Playwright E2E Tests in CI",
+    body: "A separate CI job builds the Next.js frontend, starts the FastAPI backend and runs browser tests against the live stack, after flake8 and Pytest (70% coverage gate).",
     tag: "GitHub Actions · 2026"
   },
   {

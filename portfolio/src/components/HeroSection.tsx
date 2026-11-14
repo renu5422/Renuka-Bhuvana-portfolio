@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const stats = [
   { num: "5", label: "Projects on GitHub" },
-  { num: "200+", label: "Tests in CI" },
+  { num: "290+", label: "Tests in CI" },
   { num: "AI", label: "Integrated" },
   { num: "8.03", label: "MCA CGPA" },
 ];

@@ -28,7 +28,7 @@ const strengths = [
   {
     icon: GitBranch,
     title: "CI/CD Automation",
-    body: "GitHub Actions pipeline running flake8 and 200+ Pytest tests on every push, behind a 70% coverage gate. Full stack containerised with Docker Compose.",
+    body: "GitHub Actions pipeline: flake8 → 260+ Pytest tests (85% coverage, 70% gate) → 25 Playwright E2E tests against the live stack. Full stack containerised with Docker Compose.",
     tags: ["GitHub Actions", "CI/CD", "Docker"],
     color: "#1A6B4A"
   },

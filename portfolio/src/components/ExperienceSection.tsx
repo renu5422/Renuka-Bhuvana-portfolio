@@ -8,11 +8,13 @@ const experiences = [
     org: "Personal Project", type: "Project", badge: "bg-[#1A6B4A] text-white", current: true,
     bullets: [
       "Designed and validated backend API workflows for a FastAPI-based legal information platform",
-      "Wrote 200+ Pytest unit and API tests (FastAPI TestClient), including bad-input cases that must return clear error codes, never a 500",
-      "Built a GitHub Actions CI pipeline: flake8 lint, then Pytest with a 70% coverage gate",
+      "Wrote 260+ Pytest unit and API tests (85% coverage), including bad-input cases that must return clear error codes, never a 500",
+      "Built a GitHub Actions CI pipeline: flake8 → Pytest (70% coverage gate) → 25 Playwright E2E tests against the live stack",
+      "Enforced JWT auth on chat, agent, ranking and admin endpoints, with 401/200 contract tests",
+      "Added a grounding check that flags LLM-cited IPC/BNS codes missing from the retrieved records",
       "Built duplicate- and contradiction-detection validators for the IPC→BNS mapping data",
     ],
-    stack: ["Python", "FastAPI", "Pytest", "GitHub Actions", "Docker"],
+    stack: ["Python", "FastAPI", "Pytest", "Playwright", "GitHub Actions", "Docker"],
   },
   {
     period: "Dec 2025 – Apr 2026", role: "Selenium Test Automation Framework (Java)",
