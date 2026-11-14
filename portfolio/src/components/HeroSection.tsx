@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 const stats = [
   { num: "5", label: "Projects on GitHub" },
   { num: "290+", label: "Tests in CI" },
-  { num: "AI", label: "Integrated" },
+  { num: "RAG", label: "+ LLM Evals" },
   { num: "8.03", label: "MCA CGPA" },
 ];
 
 const stack = [
-  "Python", "FastAPI", "Streamlit", "Next.js",
+  "Python", "FastAPI", "LangChain", "Next.js",
   "LangGraph", "Playwright", "Pytest", "GitHub Actions",
 ];
 
@@ -56,7 +56,7 @@ export default function HeroSection() {
         <motion.div variants={item} className="flex items-center gap-3 mb-8">
           <span className="block w-8 h-px bg-[#2D9566]" />
           <span className="text-[11px] font-mono tracking-[0.16em] uppercase text-[#2D9566]">
-            Software Engineer · Test Infrastructure · Backend Systems
+            AI Engineer (GenAI) · Software Engineer · SDET
           </span>
         </motion.div>
 
@@ -71,14 +71,14 @@ export default function HeroSection() {
 
         {/* Role */}
         <motion.p variants={item} className="font-mono text-sm tracking-[0.06em] text-white/40 mb-6">
-          Python · FastAPI · Next.js · Streamlit · SQLite · Playwright · CI/CD
+          Python · LangGraph · RAG · FastAPI · Next.js · Pytest · Playwright · CI/CD
         </motion.p>
 
         {/* Summary */}
         <motion.p variants={item} className="text-[18px] leading-[1.8] text-white/60 font-light max-w-xl mb-10">
-          I build full-stack systems — and the automated tests that prove they work.
-          Full-stack work across FastAPI, Next.js, and Streamlit, plus AI-integrated features
-          (Genkit) and an AI-assisted development workflow.
+          I build LLM-powered apps — and test what the model says.
+          LangGraph agents and RAG-style answers on FastAPI, with grounding checks on every LLM
+          answer and 290+ automated tests in CI.
         </motion.p>
 
         {/* Stats — glassmorphism panel */}

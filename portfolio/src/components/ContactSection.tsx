@@ -123,7 +123,7 @@ export default function ContactSection() {
         </motion.div>
 
         <div className="mt-16 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <span className="font-mono text-[11px] text-white/20 tracking-[0.06em]">RENUKA BHUVANA · SDET · BENGALURU</span>
+          <span className="font-mono text-[11px] text-white/20 tracking-[0.06em]">RENUKA BHUVANA · AI ENGINEER · SWE · SDET · BENGALURU</span>
           <span className="font-mono text-[11px] text-white/20 tracking-[0.06em]">Built for recruiters who care about what you&apos;ve shipped</span>
         </div>
       </div>
