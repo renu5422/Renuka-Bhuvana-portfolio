@@ -37,14 +37,14 @@ const achievements = [
     metric: "2",
     title: "Automation Frameworks Built from Scratch",
     body: "Java + Selenium + TestNG + Maven and Python + Playwright + Pytest, both on the Page Object Model.",
-    tag: "2025 – 2026"
+    tag: "Playwright · Selenium"
   },
   {
     icon: Target,
     metric: "15+",
     title: "End-to-End Scenarios Automated",
     body: "Playwright framework covering search, navigation and result validation, with explicit waits and resilient locators.",
-    tag: "Playwright · 2025"
+    tag: "Playwright"
   }
 ];
 

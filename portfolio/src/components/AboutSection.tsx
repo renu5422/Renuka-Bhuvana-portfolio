@@ -65,14 +65,14 @@ export default function AboutSection() {
             <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-[#1A6B4A]">About me</span>
           </div>
           <h2 className="text-[clamp(32px,5vw,52px)] font-light tracking-tight text-gray-900 mb-6">
-            I'm a software engineer who builds <strong className="font-semibold text-[#1A6B4A]">full-stack systems</strong><br />
+            I&apos;m a software engineer who builds <strong className="font-semibold text-[#1A6B4A]">full-stack systems</strong><br />
             — and the validation that keeps them reliable.
           </h2>
           <p className="text-[16px] leading-[1.85] text-gray-500 font-light max-w-2xl">
-            Across three full-stack projects I've built backends with FastAPI, Streamlit, and Firebase, frontends with Next.js,
+            Across three full-stack projects I&apos;ve built backends with FastAPI, Streamlit, and Firebase, frontends with Next.js,
             and data layers with SQLite and Firestore. BiblioManager taught me how backends and databases really work; CourseHub put that
             into a live AI platform; and NyayaSetu AI is where I went deeper on engineering rigor — deterministic validation
-            frameworks, relational integrity checks, and CI pipelines. Quality isn't a separate track for me; it's how I build.
+            frameworks, relational integrity checks, and CI pipelines. Quality isn&apos;t a separate track for me; it&apos;s how I build.
           </p>
         </motion.div>
 

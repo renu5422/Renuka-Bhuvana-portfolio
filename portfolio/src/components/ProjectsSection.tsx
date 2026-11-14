@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const projects = [
   {
     badge: "Lead Project", badgeClass: "bg-[#1A6B4A] text-white",
-    category: "AI · LangGraph · FastAPI · Next.js", dates: "Apr 2026 – Present",
+    category: "AI · LangGraph · FastAPI · Next.js", dates: "",
     title: "NyayaSetu AI",
     description: "Full-stack AI legal intelligence platform (FastAPI + Next.js) with 482 validated IPC→BNS mappings. Built a LangGraph agent, a scikit-learn ranking model, and an MCP server on top of a deterministic rules engine kept as ground truth, with a grounding check on every LLM answer and JWT-protected AI endpoints — 260+ Pytest and 25 Playwright E2E tests in GitHub Actions CI.",
     bullets: ["LangGraph agent: extract → retrieve → validate → compose → grounding check, with a full audit trace on every answer", "scikit-learn TF-IDF ranking model (top-1 accuracy + MRR evaluation) and an MCP server exposing 5 tools", "482 validated IPC→BNS mappings behind a deterministic rules engine kept as ground truth — the LLM only composes", "Grounding check flags any IPC/BNS code in an LLM answer that isn't in the retrieved records, tested against a live model", "CI: flake8 → 260+ Pytest tests (85% coverage, 70% gate) → 25 Playwright E2E tests against the live stack"],
@@ -14,8 +14,18 @@ const projects = [
     dark: true,
   },
   {
+    badge: "Test Automation", badgeClass: "bg-[#EBF1FB] text-[#1A4FA0]",
+    category: "SDET · Playwright · Selenium", dates: "",
+    title: "Test Automation Frameworks — Playwright (Python) & Selenium (Java)",
+    description: "Two UI automation frameworks built from scratch on the Page Object Model: Playwright + Pytest in Python, and Selenium WebDriver + TestNG + Maven in Java (github.com/renu5422/Java-Selenium-Portfolio).",
+    bullets: ["Playwright + Pytest: 15+ E2E scenarios (search, navigation, result validation) with reusable fixtures", "Explicit waits and resilient CSS/XPath locators; intermittent failures debugged via HTTP headers and request timing", "Selenium + TestNG + Maven: smoke and functional suites with explicit synchronisation and no duplicated locators"],
+    stack: ["Python", "Playwright", "Pytest", "Java", "Selenium WebDriver", "TestNG", "Maven", "POM"],
+    github: "https://github.com/renu5422/qa-automation-journey",
+    dark: false,
+  },
+  {
     badge: "Full-Stack", badgeClass: "bg-[#E8F5EE] text-[#1A6B4A]",
-    category: "Full-Stack · Next.js · Firebase", dates: "Mar 2025 – Sep 2025",
+    category: "Full-Stack · Next.js · Firebase", dates: "",
     title: "CourseHub — AI-Enhanced Learning Platform",
     description: "Full-stack AI learning platform (Next.js + Firebase + Firestore + Genkit) with course management, authentication, and AI-assisted tutoring — built and validated end to end, including real-time data consistency.",
     bullets: ["Course creation, enrollment, and role-based access (RBAC) on a Next.js + Firebase stack", "Genkit AI integration for tutoring and content generation features", "Firestore real-time data sync with eventual-consistency edge-case handling", "Firebase Authentication with end-to-end functional validation"],
@@ -25,7 +35,7 @@ const projects = [
   },
   {
     badge: "Backend Dev", badgeClass: "bg-[#F3F0FA] text-[#5B3FA0]",
-    category: "Backend · Python · Databases", dates: "Dec 2024 – Apr 2025",
+    category: "Backend · Python · Databases", dates: "",
     title: "BiblioManager — Smart Bookstore System",
     description: "Full-stack bookstore built from scratch — browse, cart, checkout, orders, admin order-status, and email notifications, with a KNN-based book recommender and a rule-based support chatbot.",
     bullets: ["Full e-commerce flow: catalog, cart, checkout, and order management", "KNN book recommender (scikit-learn) trained on a ratings dataset", "SQLite relational schema with admin roles, order status, and email notifications"],
