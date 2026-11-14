@@ -9,8 +9,8 @@ import CareerGoalsSection from "../components/CareerGoalsSection";
 import ContactSection from "../components/ContactSection";
 
 export const metadata = {
-  title: "Renuka Bhuvana — Software Engineer · SDET",
-  description: "Software Engineer & SDET | Python · FastAPI · Next.js · LangGraph · Playwright · Selenium | AI-integrated systems and the test automation that keeps them reliable | Bengaluru",
+  title: "Renuka Bhuvana — AI Engineer · Software Engineer · SDET",
+  description: "AI Engineer (GenAI) · Software Engineer · SDET | LangGraph agents, RAG & LLM evaluation | Python · FastAPI · Pytest · Playwright · CI/CD | Bengaluru",
 };
 
 const navLinks = [
@@ -27,7 +27,7 @@ export default function Home() {
       {/* Dark sticky nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A1A12]/90 backdrop-blur-md border-b border-white/10 px-6 h-14 flex items-center justify-between">
         <span className="font-mono text-[13px] font-medium text-[#2D9566] tracking-wide">
-          RB // SWE · SDET
+          RB // AI · SWE · SDET
         </span>
         <ul className="hidden md:flex items-center gap-6 list-none">
           {navLinks.map((link) => (
