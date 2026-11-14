@@ -43,7 +43,7 @@ export default function HeroSection() {
 
       {/* Code watermark */}
       <div aria-hidden="true" className="absolute right-8 top-1/2 -translate-y-1/2 text-right text-[11px] leading-relaxed font-mono text-white opacity-[0.06] pointer-events-none select-none hidden xl:block space-y-0.5">
-        {["def validate_response(data):","  assert data[\"status\"] == 200","  assert len(data[\"results\"]) > 0","  return True","","@pytest.fixture(scope=\"session\")","def api_client():","  return APIClient(base_url)","","class SearchPage(BasePage):","  def __init__(self, page):","    self.box = page.locator(\"#search\")","","✓ 20 passed in 1.42s","✓ CI pipeline: success"].map((line, i) => <div key={i}>{line || <>&nbsp;</>}</div>)}
+        {["def validate_response(data):","  assert data[\"status\"] == 200","  assert len(data[\"results\"]) > 0","  return True","","@pytest.fixture(scope=\"session\")","def api_client():","  return APIClient(base_url)","","class SearchPage(BasePage):","  def __init__(self, page):","    self.box = page.locator(\"#search\")","","✓ 268 passed · 85% coverage","✓ 25 Playwright E2E passed","✓ CI pipeline: success"].map((line, i) => <div key={i}>{line || <>&nbsp;</>}</div>)}
       </div>
 
       <motion.div
